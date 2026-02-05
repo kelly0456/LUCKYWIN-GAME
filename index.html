@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky Card Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <input
+  type="text"
+  id="codeInput"
+  placeholder="Enter code (U + 6 letters + 3 numbers)"
+  maxlength="10"
+  oninput="validateCode()"
+/>
+
+<p id="statusMsg"></p>
+
+
+  <h1>Pick a Card 🎴</h1>
+  <p class="subtitle"> LUCKY WIN</p>
+
+  <div class="cards">
+    <div class="card" onclick="reveal(this)">
+      <div class="inner">
+        <div class="front">?</div>
+        <div class="back"></div>
+      </div>
+    </div>
+
+    <div class="card" onclick="reveal(this)">
+      <div class="inner">
+        <div class="front">?</div>
+        <div class="back"></div>
+      </div>
+    </div>
+
+    <div class="card" onclick="reveal(this)">
+      <div class="inner">
+        <div class="front">?</div>
+        <div class="back"></div>
+      </div>
+    </div>
+
+    <div class="card" onclick="reveal(this)">
+      <div class="inner">
+        <div class="front">?</div>
+        <div class="back"></div>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="resetGame()">Play Again</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
